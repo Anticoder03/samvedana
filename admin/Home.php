@@ -22,9 +22,10 @@ $result_reports = mysqli_query($conn, $query_reports);
 // Get the admin username from the session
 $admin_username = $_SESSION['admin_username'];
 ?>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<main class="bg-gray-50 p-6 md:col-span-3 flex flex-col">
-            <h1 class="text-3xl font-bold mb-4">Welcome, <?php echo htmlspecialchars($admin_username); ?></h1>
+<main id="main-content" class="bg-gray-50 p-6 md:col-span-3 flex flex-col">
+            <!-- <h1 class="text-3xl font-bold mb-4">Welcome, <?php echo htmlspecialchars($admin_username); ?></h1> -->
 
             <!-- Total Reports -->
             <div class="bg-white shadow rounded p-6 mb-6">

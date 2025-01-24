@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h1 class="text-3xl font-bold mb-6 text-center">Update Package</h1>
         
         <?php if (isset($package)): ?>
-        <form method="POST" >
+        <form method="POST" action="update.php">
             <input type="hidden" name="package_id" value="<?php echo htmlspecialchars($package['package_id']); ?>">
 
             <!-- Package Name -->
